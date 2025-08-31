@@ -5,6 +5,6 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('template'); // ✅ loads application/Views/template.php
+        return view('welcome_message');
     }
 }
