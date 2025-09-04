@@ -84,4 +84,9 @@ $paths = new Paths();
 // LOAD THE FRAMEWORK BOOTSTRAP FILE
 require $paths->systemDirectory . '/Boot.php';
 
+// Force default host/port for `php spark serve`
+$_SERVER['CI_SERVER_HOST'] = '127.0.0.1';
+$_SERVER['CI_SERVER_PORT'] = 8000;
+
 exit(Boot::bootSpark($paths));
+

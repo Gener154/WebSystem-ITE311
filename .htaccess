@@ -1,0 +1,44 @@
+# ----------------------------------------------------------------------
+# Security + Basic Settings
+# ----------------------------------------------------------------------
+
+# Disable directory browsing
+Options -Indexes
+
+# Disable server signature
+ServerSignature Off
+
+# ----------------------------------------------------------------------
+# Rewrite engine
+# ----------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+
+    # IMPORTANT: set RewriteBase to your project folder
+    RewriteBase /ITE311-VILLANUEVA/
+
+    # Redirect Trailing Slashes (e.g., /home/ -> /home)
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Remove "www." (force non-www)
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+
+    # Send all non-file, non-folder requests to index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php/$1 [L,NC,QSA]
+
+    # Pass Authorization header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    # If mod_rewrite is not available, show CodeIgniter's 404
+    ErrorDocument 404 index.php
+</IfModule>
