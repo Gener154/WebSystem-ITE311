@@ -31,7 +31,7 @@ ServerSignature Off
     # Send all non-file, non-folder requests to index.php
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ index.php/$1 [L,NC,QSA]
+    RewriteRule ^(.*)$ index.php/$1 [L]
 
     # Pass Authorization header
     RewriteCond %{HTTP:Authorization} .

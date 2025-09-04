@@ -5,9 +5,11 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');       // default homepage
-$routes->get('/home', 'Home::index');   // makes /index.php/home work
+
+// Default route → homepage
 $routes->get('/', 'Home::index');
-$routes->get('/about', 'Home::about');
-$routes->get('/contact', 'Home::contact');
-    
+
+// Custom routes
+$routes->get('home', 'Home::index');
+$routes->get('about', 'Home::about');
+$routes->get('contact', 'Home::contact');
