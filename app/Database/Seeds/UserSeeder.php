@@ -4,7 +4,6 @@ namespace App\Database\Seeds;
 
 use CodeIgniter\Database\Seeder;
 
-// Seeder for inserting default users
 
 class UserSeeder extends Seeder
 {
