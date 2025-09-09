@@ -1,0 +1,104 @@
+DEBUG - 2025-09-09 02:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 02:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 02:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-09 02:57:13 --> CSRF token verified.
+ERROR - 2025-09-09 02:57:14 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'lms_alcayde' in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_alcayde', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('gener@gmail.com', 'users.email', Array)
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('gener@gmail.com', 'users.email', Array, NULL, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'gener@gmail.com', Array, Array, 'email')
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->create()
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'lms_alcayde' in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('gener@gmail.com', 'users.email', Array)
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('gener@gmail.com', 'users.email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'gener@gmail.com', Array, Array, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->create()
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 {main}
+CRITICAL - 2025-09-09 02:57:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'lms_alcayde'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('gener@gmail.com', 'users.email', [...])
+ 5 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('gener@gmail.com', 'users.email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'gener@gmail.com', [...], [...], 'email')
+ 7 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 8 SYSTEMPATH\BaseModel.php(807): CodeIgniter\BaseModel->validate([...])
+ 9 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+10 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+11 APPPATH\Controllers\Auth.php(28): CodeIgniter\BaseModel->save([...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-09-09 02:58:37 --> CSRF token verified.
+DEBUG - 2025-09-09 02:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 02:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-09 02:58:40 --> CSRF token verified.
+DEBUG - 2025-09-09 02:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 02:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-09 02:58:55 --> CSRF token verified.
+DEBUG - 2025-09-09 02:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 02:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-09 02:59:12 --> CSRF token verified.
+DEBUG - 2025-09-09 02:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 02:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-09 03:05:15 --> CSRF token verified.
+DEBUG - 2025-09-09 03:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-09 03:10:30 --> CSRF token verified.
+DEBUG - 2025-09-09 03:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-09 03:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
