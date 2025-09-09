@@ -61,23 +61,36 @@
 </head>
 <body>
    <header class="top-header">
-      <div class="container">
-         <div class="d-flex justify-content-between align-items-center">
-            <h1 class="site-title">MyPortal</h1>
+   <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+         <h1 class="site-title">MyPortal</h1>
+         
+         <div class="d-flex align-items-center">
+            <nav>
+               <ul class="nav-links">
+                  <li><a href="<?= base_url('dashboard') ?>">Dashboard</a></li>
+                  
+                  <?php if(session()->get('role') === 'admin'): ?>
+                     <li><a href="<?= base_url('users') ?>">Manage Users</a></li>
+                     <li><a href="<?= base_url('settings') ?>">Settings</a></li>
+                  <?php elseif(session()->get('role') === 'teacher'): ?>
+                     <li><a href="<?= base_url('courses') ?>">My Courses</a></li>
+                  <?php elseif(session()->get('role') === 'student'): ?>
+                     <li><a href="<?= base_url('courses') ?>">My Courses</a></li>
+                     <li><a href="<?= base_url('grades') ?>">My Grades</a></li>
+                  <?php endif; ?>
+                  
+                  <li><a href="<?= base_url('about') ?>">About</a></li>
+                  <li><a href="<?= base_url('contact') ?>">Contact</a></li>
+               </ul>
+            </nav>
             
-            <div class="d-flex align-items-center">
-               <nav>
-                  <ul class="nav-links">
-                     <li><a href="<?= base_url('dashboard') ?>">Dashboard</a></li>
-                     <li><a href="<?= base_url('about') ?>">About</a></li>
-                     <li><a href="<?= base_url('contact') ?>">Contact</a></li>
-                  </ul>
-               </nav>
-               <a href="<?= base_url('logout') ?>" class="btn btn-light btn-sm logout-btn">Logout</a>
-            </div>
+            <a href="<?= base_url('logout') ?>" class="btn btn-light btn-sm logout-btn">Logout</a>
          </div>
       </div>
-   </header>
+   </div>
+</header>
+
 
   <div class="container d-flex justify-content-center align-items-center" style="min-height: 70vh;">
    <div class="card shadow p-4 text-center">
