@@ -15,12 +15,14 @@ class UserModel extends Model
     protected $allowedFields = ['name', 'email', 'password', 'role'];
 
     // Validate incoming form fields (including non-DB fields)
-    protected $validationRules = [
-        'name'         => 'required|min_length[3]|max_length[100]',
-        'email'        => 'required|valid_email|is_unique[users.email]',
-        'password'     => 'required|min_length[8]',
-        'pass_confirm' => 'required|matches[password]',
-    ];
+ protected $validationRules = [
+    'name'         => 'required|min_length[3]|max_length[100]',
+    'email'        => 'required|valid_email|is_unique[users.email]',
+    'password'     => 'required|min_length[8]',
+    'pass_confirm' => 'required|matches[password]',
+    'role'         => 'required|in_list[student,teacher,admin]', // ✅ new
+];
+
 
     protected $validationMessages = [
         'email' => [

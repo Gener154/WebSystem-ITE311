@@ -17,12 +17,12 @@ class Auth extends BaseController
     helper(['form']);
     $users = new UserModel();
 
-    $data = [
+     $data = [
         'name'     => $this->request->getPost('name'),
-        'email'        => $this->request->getPost('email'),
-        'password'     => $this->request->getPost('password'),
+        'email'    => $this->request->getPost('email'),
+        'password' => $this->request->getPost('password'),
         'pass_confirm' => $this->request->getPost('pass_confirm'),
-        'role'         => 'user',
+        'role'     => $this->request->getPost('role'), // ✅ take from form dropdown
     ];
 
     if (! $users->save($data)) {

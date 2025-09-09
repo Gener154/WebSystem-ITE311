@@ -10,11 +10,11 @@
         body {
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: #f8f9fa;
+            background-color: #f1b559ff;
         }
         
         .top-header {
-            background-color: #2c3e50;
+            background-color: #040a0fff;
             color: white;
             padding: 1rem 0;
         }
@@ -68,44 +68,36 @@
                 <h1 class="site-title">MyPortal</h1>
                 <nav>
                     <ul class="nav-links">
-                        <li><a href="<?= base_url('register') ?>">Register</a></li>
-                        <li><a href="<?= base_url('login') ?>">Login</a></li>
-                    </ul>
+    <li><a href="<?= base_url('register') ?>">Register</a></li>
+    <li><a href="<?= base_url('login') ?>">Login</a></li>
+</ul>
                 </nav>
             </div>
         </div>
     </header>
-
     <div class="d-flex justify-content-center align-items-center" style="min-height: 80vh;">
-        <div class="card shadow p-4" style="width: 400px;">
-            <h3 class="text-center mb-4">Login</h3>
+    <div class="card shadow p-4" style="width: 400px;">
+        <h3 class="text-center mb-4">Login</h3>
+    <?php if (session()->getFlashdata('error')): ?>
+          <div class="alert alert-danger">
+            <?= session()->getFlashdata('error') ?>
+          </div>
+    <?php endif; ?>
 
-            <!-- Flash message -->
-            <?php if (session()->getFlashdata('error')): ?>
-                <div class="alert alert-danger">
-                    <?= session()->getFlashdata('error') ?>
-                </div>
-            <?php endif; ?>
-
-            <?= form_open('login/auth') ?>
-                <?= csrf_field() ?>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" name="email" class="form-control" id="email" value="<?= old('email') ?>" required>
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password:</label>
-                    <input type="password" name="password" class="form-control" id="password" required>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Login</button>
-            <?= form_close() ?>
-
-            <p class="mt-3 text-center">
-                Don’t have an account? <a href="<?= base_url('register') ?>">Register here</a>
-            </p>
-        </div>
-    </div>
-
+    <form action="<?= base_url('login/auth') ?>" method="post">
+        <?= csrf_field() ?>
+      <div class="mb-3">
+         <label for="email">Email:</label>
+        <input type="email" name="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+         <label for="password">Password:</label>
+        <input type="password" name="password" class="form-control" id="password" required>
+      </div>
+      <button  type="submit" class="btn btn-primary w-100">Login</button>
+    </form>
+     </div>
+</div>
     <script src="<?= base_url('js/bootstrap.bundle.min.js') ?>"></script>
-</body>
+    </body>
 </html>

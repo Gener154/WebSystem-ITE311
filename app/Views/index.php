@@ -12,10 +12,11 @@
         body {
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f7b245fa;
         }
         
         .top-header {
-            background-color: #2c3e50;
+            background-color: #f7b245fa;
             color: white;
             padding: 1rem 0;
         }

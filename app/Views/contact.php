@@ -12,10 +12,11 @@
         body {
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f1b559ff;
         }
         
         .top-header {
-            background-color: #2c3e50;
+            background-color: #040607ff;
             color: white;
             padding: 1rem 0;
         }
@@ -82,8 +83,10 @@
     </header>
 
   <!-- Main Content -->
-        <h1>Contact</h1>
-      <p>This is my contact page</p>
+        <div class="container text-center mt-5">
+   <h1>CONTACT</h1>
+   <p>You’re in the contact page</p>
+</div>
 
   <!-- Bootstrap JS (optional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

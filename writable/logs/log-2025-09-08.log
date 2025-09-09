@@ -1,0 +1,1134 @@
+ERROR - 2025-09-08 20:23:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-09-08 20:23:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-08 20:24:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('bossing@gmail.c...', 'users.email', Array)
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('bossing@gmail.c...', 'users.email', Array, NULL, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'bossing@gmail.c...', Array, Array, 'email')
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('bossing@gmail.c...', 'users.email', Array)
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('bossing@gmail.c...', 'users.email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'bossing@gmail.c...', Array, Array, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 {main}
+CRITICAL - 2025-09-08 20:24:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('bossing@gmail.com', 'users.email', [...])
+ 5 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('bossing@gmail.com', 'users.email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'bossing@gmail.com', [...], [...], 'email')
+ 7 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 8 SYSTEMPATH\BaseModel.php(807): CodeIgniter\BaseModel->validate([...])
+ 9 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+10 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+11 APPPATH\Controllers\Auth.php(28): CodeIgniter\BaseModel->save([...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-08 20:27:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 {main}
+CRITICAL - 2025-09-08 20:27:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', [...])
+ 5 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', [...], [...], 'email')
+ 7 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 8 SYSTEMPATH\BaseModel.php(807): CodeIgniter\BaseModel->validate([...])
+ 9 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+10 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+11 APPPATH\Controllers\Auth.php(28): CodeIgniter\BaseModel->save([...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-08 20:27:27 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 {main}
+CRITICAL - 2025-09-08 20:27:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', [...])
+ 5 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', [...], [...], 'email')
+ 7 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 8 SYSTEMPATH\BaseModel.php(807): CodeIgniter\BaseModel->validate([...])
+ 9 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+10 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+11 APPPATH\Controllers\Auth.php(28): CodeIgniter\BaseModel->save([...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-08 20:29:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 {main}
+CRITICAL - 2025-09-08 20:29:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', [...])
+ 5 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', [...], [...], 'email')
+ 7 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 8 SYSTEMPATH\BaseModel.php(807): CodeIgniter\BaseModel->validate([...])
+ 9 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+10 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+11 APPPATH\Controllers\Auth.php(28): CodeIgniter\BaseModel->save([...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-08 20:31:00 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 {main}
+CRITICAL - 2025-09-08 20:31:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', [...])
+ 5 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', [...], [...], 'email')
+ 7 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 8 SYSTEMPATH\BaseModel.php(807): CodeIgniter\BaseModel->validate([...])
+ 9 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+10 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+11 APPPATH\Controllers\Auth.php(28): CodeIgniter\BaseModel->save([...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-08 20:31:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 {main}
+CRITICAL - 2025-09-08 20:31:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', [...])
+ 5 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', [...], [...], 'email')
+ 7 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 8 SYSTEMPATH\BaseModel.php(807): CodeIgniter\BaseModel->validate([...])
+ 9 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+10 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+11 APPPATH\Controllers\Auth.php(28): CodeIgniter\BaseModel->save([...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-08 20:33:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 {main}
+CRITICAL - 2025-09-08 20:33:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', [...])
+ 5 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', [...], [...], 'email')
+ 7 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 8 SYSTEMPATH\BaseModel.php(807): CodeIgniter\BaseModel->validate([...])
+ 9 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+10 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+11 APPPATH\Controllers\Auth.php(28): CodeIgniter\BaseModel->save([...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-08 20:33:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 {main}
+CRITICAL - 2025-09-08 20:33:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', [...])
+ 5 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', [...], [...], 'email')
+ 7 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 8 SYSTEMPATH\BaseModel.php(807): CodeIgniter\BaseModel->validate([...])
+ 9 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+10 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+11 APPPATH\Controllers\Auth.php(28): CodeIgniter\BaseModel->save([...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-08 20:33:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', Array)
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', Array, Array, 'email')
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(1570): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(807): CodeIgniter\BaseModel->validate(Array)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(28): CodeIgniter\BaseModel->save(Array)
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+#13 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#14 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#16 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 {main}
+CRITICAL - 2025-09-08 20:33:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('boss@gmail.com', 'users.email', [...])
+ 5 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('boss@gmail.com', 'users.email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'boss@gmail.com', [...], [...], 'email')
+ 7 SYSTEMPATH\BaseModel.php(1570): CodeIgniter\Validation\Validation->run([...], null, null)
+ 8 SYSTEMPATH\BaseModel.php(807): CodeIgniter\BaseModel->validate([...])
+ 9 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+10 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+11 APPPATH\Controllers\Auth.php(28): CodeIgniter\BaseModel->save([...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->createAcc()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-08 20:35:07 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-09-08 20:35:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-08 20:37:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-09-08 20:37:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-08 20:40:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-09-08 20:40:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-09-08 20:45:11 --> CSRF token verified.
+DEBUG - 2025-09-08 20:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-08 20:45:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-09-08 20:45:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-09-08 20:49:10 --> CSRF token verified.
+DEBUG - 2025-09-08 20:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-08 20:49:10 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-09-08 20:49:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-09-08 20:51:53 --> CSRF token verified.
+DEBUG - 2025-09-08 20:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-08 20:51:53 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-09-08 20:51:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-09-08 20:51:57 --> CSRF token verified.
+DEBUG - 2025-09-08 20:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-08 20:51:57 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-09-08 20:51:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-08 20:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-08 20:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 20:52:21 --> CSRF token verified.
+DEBUG - 2025-09-08 20:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-08 20:52:21 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-09-08 20:52:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-09-08 20:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 20:54:36 --> CSRF token verified.
+DEBUG - 2025-09-08 20:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-08 20:54:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_villanueva', 3306, '', 0)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ITE311-VILLANUEVA\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ITE311-VILLANUEVA\app\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\ITE311-VILLANUEVA\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ITE311-VILLANUEVA\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ITE311-VILLANUEVA\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-09-08 20:54:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: POST, Route: login/auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(56): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-09-08 20:59:04 --> CSRF token verified.
+DEBUG - 2025-09-08 20:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-08 20:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-08 21:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 21:00:29 --> CSRF token verified.
+DEBUG - 2025-09-08 21:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-08 21:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
