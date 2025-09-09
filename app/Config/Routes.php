@@ -22,5 +22,10 @@ $routes->get('/logout', 'Auth::logout');
 $routes->get('/dashboard', 'Auth::dashboard');
 $routes->post('/register', 'Auth::create');
 $routes->get('/register/success', 'Auth::success');
+$routes->get('/grades', 'Grades::index');
+$routes->get('/courses', 'Courses::index');
+$routes->get('/users', 'Users::index');
+$routes->get('/settings', 'Settings::index');
+
 
 $routes->setAutoRoute(true);
