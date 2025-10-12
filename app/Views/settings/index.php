@@ -16,7 +16,7 @@
         }
         
         .top-header {
-            background-color: #040607ff;
+            background-color: #030405ff;
             color: white;
             padding: 1rem 0;
         }
@@ -41,8 +41,8 @@
             font-size: 1rem;
         }
         
-            .nav-links a:hover {
-            color: #fbbf24;
+        .nav-links a:hover {
+            color: #bdc3c7;
         }
         
         .main-content {
@@ -72,23 +72,21 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h1 class="site-title">MyPortal</h1>
                 <nav>
-                     <ul class="nav-links">
-                       <li><a href="<?= base_url('dashboard') ?>">Dashboard</a></li>
+                    <ul class="nav-links">
+                      <li><a href="<?= base_url('dashboard') ?>">Dashboard</a></li>
                         <li><a href="<?= base_url('about') ?>">About</a></li>
                         <li><a href="<?= base_url('contact') ?>">Contact</a></li>
-                    </ul>
+                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
-  <!-- Main Content -->
-        <div class="container text-center mt-5">
-   <h1>CONTACT</h1>
-   <p>You’re in the contact page</p>
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 70vh;">
+    <div class="card shadow p-4 text-center">
+        <h2 class="page-title">Settings</h2>
+        <p class="content-text">
+            Work in Progress <br>
+            Coming Soon...
+        </p>
+    </div>
 </div>
-
-  <!-- Bootstrap JS (optional) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>

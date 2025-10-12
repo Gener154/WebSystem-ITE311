@@ -51,7 +51,7 @@
         .register-card {
             width: 100%;
             max-width: 450px;
-            background: #c0b9b9ff;
+            background: #ffffffff;
             border-radius: 1rem;
             padding: 2.5rem;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -179,18 +179,22 @@
                     <?php endif; ?>
                 </div>
 
-                <div class="mb-3">
+                    <div class="mb-3">
                     <label for="pass_confirm" class="form-label">Confirm Password</label>
                     <input 
                         name="pass_confirm" 
                         type="password" 
                         class="form-control <?= session('errors.pass_confirm') ? 'is-invalid' : '' ?>" 
                         id="pass_confirm"
-                        required>
-                    <?php if(session('errors.pass_confirm')): ?>
-                        <div class="invalid-feedback"><?= session('errors.pass_confirm') ?></div>
-                    <?php endif; ?>
-                </div>
+                     required
+                     placeholder="Re-enter your password">
+                 <?php if(session('errors.pass_confirm')): ?>
+                  <div class="invalid-feedback">
+                    <?= session('errors.pass_confirm') ?>
+                    </div>
+                 <?php endif; ?>
+                 </div>
+
 
                 <div class="mb-3">
                     <label for="role" class="form-label">Role Selection</label>

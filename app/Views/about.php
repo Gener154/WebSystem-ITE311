@@ -42,8 +42,8 @@
         }
         
         .nav-links a:hover {
-            color: #bdc3c7;
-        }
+           color: #fbbf24;
+         }
         
         .main-content {
             padding: 3rem 0;
@@ -54,11 +54,11 @@
             font-size: 2.5rem;
             font-weight: 300;
             margin-bottom: 1.5rem;
-            color: #2c3e50;
+            color: #ffffffff;
         }
         
         .content-text {
-            color: #666;
+            color: #ffffffff;
             line-height: 1.6;
         }
     </style>
