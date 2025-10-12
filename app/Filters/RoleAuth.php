@@ -44,6 +44,7 @@ class RoleAuth implements FilterInterface
 
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
-        // Nothing to do after
+        // Added role authentication filter - midterm update
+
     }
 }
