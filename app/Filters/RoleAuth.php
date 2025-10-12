@@ -11,30 +11,39 @@ class RoleAuth implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         $session = session();
+
+        // ✅ Check if user is logged in
+        if (!$session->get('isLoggedIn')) {
+            return redirect()->to('/login')->with('error', 'Please log in first.');
+        }
+
         $role = $session->get('role');
+        $uri  = service('uri')->getPath(); // e.g. "admin/dashboard"
 
-        // ✅ Correct way to access the URI segments:
-        $uri = $request->getUri();
-        $segment1 = $uri->getSegment(1); // e.g. "admin" or "teacher"
-
-        // 🔹 Admin: only /admin/*
-        if ($role === 'admin' && $segment1 !== 'admin') {
-            return redirect()->to('/announcements')->with('error', 'Access Denied: Insufficient Permissions');
+        // ✅ Admin — can access anything under /admin
+        if ($role === 'admin' && str_starts_with($uri, 'admin')) {
+            return;
         }
 
-        // 🔹 Teacher: only /teacher/*
-        if ($role === 'teacher' && $segment1 !== 'teacher') {
-            return redirect()->to('/announcements')->with('error', 'Access Denied: Insufficient Permissions');
+        // ✅ Teacher — can access anything under /teacher
+        if ($role === 'teacher' && str_starts_with($uri, 'teacher')) {
+            return;
         }
 
-        // 🔹 Student: only /student/* or /announcements
-        if ($role === 'student' && !in_array($segment1, ['student', 'announcements'])) {
-            return redirect()->to('/announcements')->with('error', 'Access Denied: Insufficient Permissions');
+        // ✅ Student — can access /student/* and /announcements
+        if ($role === 'student' && 
+           (str_starts_with($uri, 'student') || str_starts_with($uri, 'announcements'))) {
+            return;
         }
+
+        // ❌ Unauthorized access
+        return redirect()
+            ->to('/announcements')
+            ->with('error', 'Access Denied: Insufficient Permissions');
     }
 
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
-        // You can leave this empty for now
+        // Nothing to do after
     }
 }
